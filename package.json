@@ -1,0 +1,32 @@
+{
+  "name": "Exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --parallel run dev",
+    "dev:user": "pnpm --filter user run dev",
+    "dev:fruit": "pnpm --filter fruit run dev",
+    "dev:gateway": "pnpm --filter gateway run dev",
+    "start": "pnpm --parallel run start",
+    "start:user": "pnpm --filter user run start",
+    "start:fruit": "pnpm --filter fruit run start",
+    "start:gateway": "pnpm --filter gateway run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.18.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.18.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
